@@ -22,8 +22,29 @@
 	<?php
 		$custom_crumbs['Arts and Sciences'] = "http://artsandsciences.osu.edu";
 		$custom_crumbs['Business Services Center'] = 0;
-		require_once(path_to_theme() . "/navbar/osu-navbar-b-custom.php");
 	?>
+
+	<div id="osu_navbar" role="navigation">
+			<div class="container">
+				<h2 class="osu-semantic">Ohio State nav bar</h2>
+			<a href="#page-content" id="skip" class="osu-semantic">Skip to main content</a>
+				<div class="univ_info">
+					<p class="univ_name"><a href="http://osu.edu" title="The Ohio State University">The Ohio State University</a></p>
+				</div><!-- /univ_info -->
+				<div class="univ_links">
+					<div class="links">
+						<ul>
+							<li><a href="http://www.osu.edu/help.php" class="help">Help</a></li>
+							<li><a href="http://buckeyelink.osu.edu/" class="buckeyelink" >BuckeyeLink</a></li>
+							<li><a href="http://www.osu.edu/map/" class="map">Map</a></li>
+							<li><a href="http://www.osu.edu/findpeople.php" class="findpeople">Find People</a></li>
+							<li><a href="https://email.osu.edu/" class="webmail">Webmail</a></li> 
+							<li><a href="http://www.osu.edu/search/" class="search">Search Ohio State</a></li>
+						</ul>
+					</div><!-- /links -->
+				</div><!-- /univ_links -->
+			</div><!-- /container -->
+	</div><!-- /osu_navbar -->
 
 	<div id="header">
 		<div class="container">
@@ -33,10 +54,10 @@
 						<a href="<?php global $base_url; print $base_url; ?>" title="Back to <?php print $site_name; ?> home"><img alt="<?php print $site_name; ?> Logo" src="<?php print $logo ?>"/></a>
 					<?php } ?>
 				</div><!-- .logo -->
-                <a href="http://www.osu.edu/" id="osulogo" title="Click here to visit the Ohio State University homepage">&nbsp;</a>
+								<a href="http://www.osu.edu/" id="osulogo" title="Click here to visit the Ohio State University homepage">&nbsp;</a>
 
 				<div id="navigation">
-					<?php print $MainNav; ?>			
+					<?php print $MainNav; ?>
 				</div><!-- #navigation -->
 			</div>
 		</div> <!-- .container -->
@@ -66,19 +87,19 @@
 			<div id="footer-right" class="span-17 last">
 				<div id="footer-top" class="span-17 last">
 					<?php print $footer_search; ?>
-                    <?php print $footer_icons; ?>
+										<?php print $footer_icons; ?>
 				</div>
 				<div id="footer-bottom" class="span-17 last">
 				</div>
 			</div>
 		</div><!-- .container -->
 	</div><!-- #footer -->
-  	<div id="footer_copyright" class="clearfix">
-  		<div class="small">
-  			<p>&copy; <?php print date("Y"); ?>, The Ohio State University, College of Arts and Sciences</p>
-  			<?php include(path_to_theme() . "/icons/uicons_basic.php"); ?>
-  		</div>
-  	</div>
+		<div id="footer_copyright" class="clearfix">
+			<div class="small">
+				<p>&copy; <?php print date("Y"); ?>, The Ohio State University, College of Arts and Sciences</p>
+				<?php include(path_to_theme() . "/icons/uicons_basic.php"); ?>
+			</div>
+		</div>
 
 <?php print $closure;?>
 
