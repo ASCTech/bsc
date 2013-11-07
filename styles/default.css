@@ -523,7 +523,7 @@ div.scrollbox p {
 /* End Footer */
 
 #logo, #osulogo {
-	bottom: 50px;
+	bottom: 40px;
 	position: absolute;
 }
 
@@ -534,9 +534,9 @@ div.scrollbox p {
 
 #osulogo {
 	background: transparent url("../images/osulogo.png") no-repeat scroll 0 0;
-	height: 86px;
+	height: 117px;
 	right: 0;
-	width: 84px;
+	width: 167px;
 }
 
 div.breadcrumb {
